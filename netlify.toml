@@ -1,9 +1,9 @@
 [build]
-command = 'hugo'
 publish = 'public'
+command = "npm install && hugo --gc --minify"
 
 [build.environment]
-HUGO_VERSION = '0.163.2'
+HUGO_VERSION = '0.163.3'
 
 [context]
 [context.branch-deploy]
