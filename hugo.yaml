@@ -1,0 +1,96 @@
+baseURL: https://example.com
+title: Tella
+author: username
+languageCode: en
+DefaultContentLanguage: en
+enableInlineShortcodes: true
+theme: tella
+enableRobotsTXT: true
+services:
+  disqus: {}
+  googleAnalytics: {}
+params:
+  giscus: {}
+  googleFonts: true
+  homepage_meta_tags:
+    meta_description: A Hugo Theme for OSSProject, Companies, Organization...
+    meta_og_description: A Hugo Theme for OSSProject, Companies, Organization...
+    meta_og_image: https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png
+    meta_og_title: Tella
+    meta_og_type: website
+    meta_og_url: https://tella.pages.dev
+    meta_twitter_card: summary_large_image
+    meta_twitter_creator: '@username'
+    meta_twitter_site: '@username'
+  icon:
+    bootstrap: true
+  logo:
+    alt: Tella Logo
+    main: img/logo/logo.svg
+    size: h-14
+  mainSections: blog
+  share:
+    enable: true
+  showBlog: true
+  site:
+    name: Tella
+menu:
+  footer:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Github
+      url: https://github.com/opera7133/tella
+      weight: 2
+  main:
+    - identifier: products
+      name: Products
+      url: /products/
+      weight: 1
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 2
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 3
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 4
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+privacy:
+  instagram:
+    disabled: false
+    simple: false
+  vimeo:
+    disabled: false
+    simple: false
+  x:
+    disabled: false
+    enableDNT: true
+    simple: false
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/notwatching/hugo_stats\.json
+      target: css
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json
