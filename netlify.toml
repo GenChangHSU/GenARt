@@ -1,6 +1,6 @@
 [build]
 publish = 'public'
-command = "npm install && hugo --gc --minify --logLevel debug"
+command = "rm -rf node_modules && npm ci && ls -la node_modules/.bin/ | grep tailwind; hugo --gc --minify"
 
 [build.environment]
 HUGO_VERSION = '0.163.3'
