@@ -4,7 +4,7 @@ command = "rm -rf node_modules && npm ci && ls -la node_modules/.bin/ | grep tai
 
 [build.environment]
 HUGO_VERSION = '0.163.3'
-NODE_VERSION = '20'
+NODE_VERSION = '22'
 NPM_CONFIG_YES = 'true'
 
 [context]
