@@ -33,7 +33,7 @@ params:
     enable: true
   showBlog: true
   site:
-    name: GenArt
+    name: GenARt
 menu:
   footer:
     - name: Home
@@ -48,7 +48,7 @@ menu:
       url: /about/
       weight: 1
     - identifier: blog
-      name: Post
+      name: Posts
       url: /blog/
       weight: 2
 taxonomies:
